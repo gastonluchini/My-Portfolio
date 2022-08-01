@@ -27,7 +27,7 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setButtonText('Enviando ...');
-        let response = await fetch('http://localhost:5000/contact', {
+        let response = await fetch('https://myportfoliogaston.herokuapp.com/contact', {
             method: 'POST',
             headers: {
                 'content-Type': 'Application/json;charset=utf-8', 
