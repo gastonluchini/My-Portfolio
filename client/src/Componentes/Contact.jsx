@@ -49,11 +49,11 @@ const Contact = () => {
         <section className='contact' id='contact'>
             <Container>
                 <Row className='align-items-center'>
-                    <Col md={6} className='uno'>
+                    <Col xs={12} md={6} className='uno'>
                         <img src={email} alt="form" />
                     </Col>
 
-                    <Col md={6} className='dos'>
+                    <Col xs={12} md={6} className='dos'>
                         
                         <form onSubmit={handleSubmit}>
                             <Row>

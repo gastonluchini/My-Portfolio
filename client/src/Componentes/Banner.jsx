@@ -31,7 +31,7 @@ const Banner = () => {
             setDelta(prevDelta => prevDelta / 2);
         } 
 
-        if (isDeleting && updateText === fullText) {
+        if (!isDeleting && updateText === fullText) {
             setIsDeleting(true);
             setDelta(period);
         }
@@ -50,7 +50,7 @@ const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className='tagline'>Bienvenidos a mi Portfolio</span>
                         <h1>{'Hola, soy Gastón '}<span className='wrap'>{text}</span></h1>
-                        <p>Me apasiona la lectura y el desarrollo personal. Trabajé más de 10 años en el área de Recursos Humanos, gerenciando equipos de más de 100 personas. Con la creación de un proyecto de recursos humanos, descubrí el apasionante mundo de la programación. Realicé un bootcamp en Henry de Full Stack Developer y fui seleccionado como Teaching Assistant para acompañar a los estudiantes en su proceso de aprendizaje. Me especializo en Frontend y React.</p>
+                        <p>Me apasiona la lectura y el desarrollo personal. Trabajé más de 10 años en el área de Recursos Humanos, liderando equipos de más de 100 personas. Con la creación de un proyecto de recursos humanos, descubrí el apasionante mundo de la programación. Realicé un bootcamp en Henry de Full Stack Developer y fui seleccionado como Teaching Assistant para acompañar a los estudiantes en su proceso de aprendizaje. Me especializo en Frontend y React.</p>
                     </Col>
 
                     <Col xs={12} md={6} xl={5}>
